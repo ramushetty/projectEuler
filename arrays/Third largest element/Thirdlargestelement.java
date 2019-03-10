@@ -21,7 +21,34 @@ class Thirdlargestelement {
 				}
 				count++;
 			}
-		}	
-	}
+			 //  	int len;
+
+				// len = a.length;
+				// len = len-3;
+				// if (a.length<3)
+				// return -1;
+				// else
+				//     return a[len];
+			 //    }
+				//    if(a.length<3)
+		 //        return -1;
+		 //        long max1=0,max2=0,max3=0;
+		 //        for(int i=0;i<a.length;i++){
+		 //            if(a[i]>max1)
+		 //         {   max3=max2;
+		 //            max2=max1;
+		 //            max1=a[i];
+		 //        }
+		 //        else if(a[i]>max2)
+		 //        {
+		 //            max3=max2;
+		 //            max2=a[i];
+		 //        }
+		 //        else if(a[i]>max3){
+		 //            max3=a[i];
+		 //        }
+		 //        }return max3;
+			// 	}	
+			// }
 	
 }

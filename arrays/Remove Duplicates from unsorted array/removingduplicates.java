@@ -1,28 +1,26 @@
 import java.util.*;
 class removingduplicates {
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		int t = scan.nextInt();
-		while(t-- > 0) {
-			int n = scan.nextInt();
-			int[] arr = new int[n];
-			for(int i = 0 ; i < n; i++) {
-				// int temp =  scan.nextInt();
-				// if (!s.contains(temp)) {
-				// 	s.add(temp);
-				// }
-				arr[i] = scan.nextInt();
-			}
-			HashSet<Integer> s = new HashSet<Integer>(arr);
-
-		 Iterator<Integer> i=s.iterator();  
-           while(i.hasNext())  
-           {  
-           System.out.print(i.next() + " ");  
-           } 
-           System.out.println();
-		}
-	}
+	// public static void main(String[] args) {
+	// 	Scanner scan = new Scanner(System.in);
+	// 	int t = scan.nextInt();
+	// 	while(t-- > 0) {
+	// 		int n = scan.nextInt();
+	// 		int[] arr = new int[n];
+	// 		HashSet<Integer> s = new HashSet<Integer>();
+	// 		for(int i = 0 ; i < n; i++) {
+	// 			int temp =  scan.nextInt();
+	// 			if (!s.contains(temp)) {
+	// 				s.add(temp);
+	// 			}
+	// 		}
+	// 	 Iterator<Integer> i=s.iterator();  
+ //           while(i.hasNext())  
+ //           {  
+ //           System.out.print(i.next() + " ");  
+ //           } 
+ //           System.out.println();
+	// 	}
+	// }
 	 	// public static void main(String[] args) {
 	 	// 	Scanner scan = new Scanner(System.in);
 	 	// 	int t = scan.nextInt();
@@ -84,25 +82,41 @@ class removingduplicates {
 	// 
 		// public static void main (String[] args)
 	 // {
-	 // //code
 	 
-	 // Scanner sc = new Scanner(System.in);
-	 // int T = sc.nextInt();
-	 // for(int i = 0;i<T;i++)
-	 // {
-	 //     int n = sc.nextInt();
-	 //     Integer a[] = new Integer[n];
-	 //     for(int x = 0;x<n;x++)
-	 //     {
-	 //         a[x] = sc.nextInt();
-	 //     }
-	 //     LinkedHashSet<Integer> ln = new LinkedHashSet<>(Arrays.asList(a));
-	 //     System.out.println(Arrays.asList(a));
-  //       for(Integer x : ln)
-  //       {
-  //           System.out.print(x+" ");
-  //       }
-  //       System.out.println();
+		//  Scanner sc = new Scanner(System.in);
+		//  int T = sc.nextInt();
+		//  for(int i = 0;i<T;i++)
+		//  {
+		//      int n = sc.nextInt();
+		//      Integer a[] = new Integer[n];
+		//      for(int x = 0;x<n;x++)
+		//      {
+		//          a[x] = sc.nextInt();
+		//      }
+		//      LinkedHashSet<Integer> ln = new LinkedHashSet<>(Arrays.asList(a));
+		//      System.out.println(Arrays.asList(a));
+	 //        for(Integer x : ln)
+	 //        {
+	 //            System.out.print(x+" ");
+	 //        }
+	 //        System.out.println();
+		//  }
 	 // }
-	 // }
+		public static void main(String[] args) {
+			Scanner scan =new Scanner(System.in);
+			int t = scan.nextInt();
+			while(t-- > 0) {
+				int n = scan.nextInt();
+				List<Integer> al = new ArrayList<Integer>();
+				for(int i = 0; i < n ; i++) {
+					int temp = scan.nextInt();
+					if(!al.contains(temp)) {
+						al.add(temp);
+					}
+				}
+				for(int i = 0;i < al.size(); i++) {
+					System.out.print(al.get(i) + " ");
+				}
+			}
+		}
 }
